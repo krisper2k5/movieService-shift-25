@@ -1,12 +1,11 @@
-# React + Vite
+# Ожидаемый результат: создана страница/экран афиши и страница/экран конкретного фильма. Реализован показ расписания и флоу оплаты билетов
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Реализована страница/экран афиша с списком фильмов, список фильмов получен с помощью запроса **get** [/cinema/today](https://shift-intensive.ru/api/rest#/%F0%9F%8D%BF%20cinema/CinemaController_getCinemaToday)
 
-Currently, two official plugins are available:
+2. Реализована страница/экран конкретного фильма, фильм получен с помощью запроса **get** [/cinema/film/:filmId](https://shift-intensive.ru/api/rest#/%F0%9F%8D%BF%20cinema/CinemaController_getFilm)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+3. Реализовано отображение расписания на 7 дней с помощью запроса **get** [/cinema/film/:filmId/schedule](https://shift-intensive.ru/api/rest#/%F0%9F%8D%BF%20cinema/CinemaController_getFilmSchedule)
 
-## Expanding the ESLint configuration
+4. Реализован выбор места с помощью селектов
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+5. Реализована форма заполнения данных для оплаты
