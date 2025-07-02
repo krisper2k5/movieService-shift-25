@@ -1,0 +1,33 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  border-top: 1px solid #e4e4e4;
+  z-index: 100;
+  color: var(--co);
+}
+
+.elements {
+  width: 100px;
+  text-align: center;
+
+  img {
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  p {
+    margin-top: 7px;
+    margin-bottom: 0;
+
+    &:focus {
+      color: var(--primary);
+    }
+  }
+}
