@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function Footer() {
-  const [activeTab, setActiveTab] = useState(null);
+  const [activeTab, setActiveTab] = useState(1);
 
   const tabs = [
     {

@@ -1,8 +1,108 @@
 .container {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 16px 0 16px;
+  height: 500px;
+  row-gap: 10px;
 
-  img {
-    width: 328px;
-    height: 300px;
+  @media (min-width: 688px) {
+    row-gap: 10px;
+    column-gap: 80px;
+  }
+  @media (min-width: 1044px) {
+    row-gap: 10px;
+    column-gap: 30px;
+  }
+  .film-item {
+    &:first-child {
+      padding-bottom: 0;
+    }
+
+    &:last-of-type {
+      margin-bottom: 10px;
+      padding-bottom: 80px;
+    }
+
+    .imposition {
+      position: relative;
+      width: 328px;
+      height: 300px;
+      border-radius: 20px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .genres {
+        width: 181px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 10px 0 8px 0;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        background-color: var(--bg-secondary);
+        padding-left: 15px;
+
+        .realizeDate {
+          font-size: 14px;
+          font-weight: 400;
+          padding: 4px 0 10px 4px;
+        }
+      }
+
+      .genre-item {
+        color: var(--text-primary);
+        padding: 4px;
+        border-radius: 12px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+    .nameMovie {
+      font-weight: 600;
+      font-size: var(--h3);
+      margin: 30px 0 5px;
+      display: flex;
+      flex-wrap: wrap;
+      height: 55px;
+      width: 235px;
+    }
+    .title {
+      display: block;
+    }
+    button {
+      height: 56px;
+      width: 328px;
+      font-weight: 600;
+      background-color: var(--bg-goverPrimary);
+      border-radius: 20px;
+      color: var(--text-invert);
+      border: 0;
+      padding: 0 105px;
+      font-size: 24px;
+
+      &:active {
+        color: var(--bg-goverPrimary);
+        background-color: var(--text-invert);
+        border: 1px solid var(--bg-goverPrimary);
+        transform: scale(0.98);
+      }
+    }
+
+    .rating,
+    .runtime {
+      color: #637083;
+      font-weight: 400;
+      font-size: 17px;
+      margin-bottom: 15px;
+    }
   }
 }
