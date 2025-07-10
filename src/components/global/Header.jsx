@@ -1,4 +1,4 @@
-function header() {
+function Header() {
   return (
     <>
       <h2 className="header">Афиша</h2>
@@ -6,4 +6,4 @@ function header() {
   );
 }
 
-export default header;
+export default Header;
