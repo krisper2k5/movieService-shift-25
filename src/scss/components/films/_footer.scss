@@ -24,21 +24,18 @@
   width: 100px;
   text-align: center;
   cursor: pointer;
+  transition: all 0.2s ease;
 
   img {
     display: block;
-    justify-content: center;
-
-    margin: 0 auto;
-    margin-top: 10px;
+    margin: 10px auto 0;
+    transition: filter 0.2s ease;
   }
 
   p {
-    margin-top: 7px;
-    margin-bottom: 0;
+    margin: 7px 0 0;
     color: #637083;
     transition: color 0.2s ease;
-    text-decoration: none;
   }
 
   &:hover p {
