@@ -1,0 +1,12 @@
+.header {
+  display: block;
+  margin-top: 18px;
+  margin-left: 70px;
+  height: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+
+  @media (min-width: 1044px) {
+    margin-top: 106px;
+  }
+}
